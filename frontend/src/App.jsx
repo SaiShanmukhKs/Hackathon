@@ -2,7 +2,7 @@ import React from "react";
 import './App.css'
 import { Routes, Route } from "react-router-dom";import HackathonForm from "./components/HackathonForm";
 import QRCodeGenerator from "./components/QrCodeGenerator";
-import { QrCode } from "lucide-react";
+import ParticipantsList from "./components/ParticipantsList";
 
 
 
@@ -13,6 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HackathonForm/>} />
       <Route path="/qr" element={<QRCodeGenerator />} />
+      <Route path="/List" element={<ParticipantsList/>}/>
       
       
     </Routes>

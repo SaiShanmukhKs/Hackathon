@@ -2,7 +2,7 @@ import React from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 const QRCodeGenerator = () => {
-  const registrationUrl = "https://google.com"; // Change to your registration form URL
+  const registrationUrl = "http://localhost:5173"; // Change to your registration form URL
 
   return (
     <div className="flex flex-col items-center p-4">

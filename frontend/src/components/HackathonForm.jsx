@@ -225,15 +225,13 @@ function HackathonForm() {
         return false;
       }
       
-      // Since we can't directly use LinkedIn API without authentication,
-      // we'll do a simple HTTP HEAD request to check if the URL exists
+      
       const response = await fetch(participant.linkedin, {
         method: 'HEAD',
         mode: 'no-cors' // This is necessary for cross-origin requests
       });
       
-      // Due to CORS, we may not get much information, but if the request doesn't throw,
-      // we'll consider it valid for demonstration purposes
+     
       setLinkedinVerified(true);
       setErrors({...errors, linkedin: null});
       return true;
